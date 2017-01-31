@@ -23,7 +23,8 @@ public class InputTest {
 		
 		// display output on console
 		System.out.println("Hello, " + name + ". Next year, you'll be " + (age + 1));
-/*		System.out.println("The username is " + username);
+		System.out.printf("Hello, %s. Next year, you'll be %d\r\n", name, age + 1);
+		/*		System.out.println("The username is " + username);
 		System.out.println("The password is " + passwd);*/
 		
 		in.close();
