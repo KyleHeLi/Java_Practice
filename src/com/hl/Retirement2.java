@@ -6,7 +6,7 @@ import java.util.Scanner;
 * @author Kyle Lee 
 * @version 1.0 - Created date: 2017年1月31日 上午11:49:45
 * @filename Practice/com.hl/Retirement2.java
-* This program create a new 
+* This program create a new loop
 */
 
 public class Retirement2 {
