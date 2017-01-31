@@ -31,6 +31,7 @@ public class Retirement {
 		}
 		
 		System.out.printf("You can retire in %d years. \r\n", years);
+		in.close();
 	}
 
 }
