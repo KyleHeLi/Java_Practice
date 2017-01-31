@@ -1,7 +1,5 @@
 package com.hl;
 
-import java.util.function.IntPredicate;
-
 /**
 * @author Kyle Lee 
 * @version 1.0 - Created date: 2017年1月31日 下午2:59:05
