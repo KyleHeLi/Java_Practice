@@ -1,6 +1,5 @@
 package com.hl;
 
-import java.io.Console;
 import java.util.Scanner;
 
 public class InputTest {
@@ -26,6 +25,8 @@ public class InputTest {
 		System.out.println("Hello, " + name + ". Next year, you'll be " + (age + 1));
 /*		System.out.println("The username is " + username);
 		System.out.println("The password is " + passwd);*/
+		
+		in.close();
 	}
 
 }
