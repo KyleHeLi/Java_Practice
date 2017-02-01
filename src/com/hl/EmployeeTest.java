@@ -30,6 +30,12 @@ public class EmployeeTest {
 		for (Employee e : staff) {
 			System.out.printf("name=%s, salary=%.2f, hireDay=%s \r\n", e.getName(), 
 					e.getSalary(), e.getHireDay());
+			if  (e.getName().equals("Carl Cracker")) {
+				e.giveGoldStar();
+				e.giveSilverStar();
+				e.giveBrownStar();
+				System.out.printf("%s gets %s", e.getName(), e.getEvaluations());
+			}
 		}
 	}
 }
@@ -43,12 +49,14 @@ class Employee {
 //	private Date hireDay;
 	// Java 1.8
 	private LocalDate hireDay;
+	private final StringBuilder evaluations;
 	
 	// constructor
 	public Employee(String n, double s, int year, int month, int day) {
 		name = n;
 		salary = s;
 		hireDay = LocalDate.of(year, month, day);
+		evaluations = new StringBuilder();
 	}
 	
 	// methods
@@ -67,5 +75,21 @@ class Employee {
 	public void raiseSalary(double byPercent) {
 		double raise = salary * byPercent / 100;
 		salary += raise;
+	}
+
+	public  void giveGoldStar() {
+		evaluations.append(LocalDate.now() + ": Gold star!\r\n");
+	}
+
+	public  void giveSilverStar() {
+		evaluations.append(LocalDate.now() + ": Silver star!\r\n");
+	}
+
+	public  void giveBrownStar() {
+		evaluations.append(LocalDate.now() + ": Brown star!\r\n");
+	}
+
+	public  StringBuilder getEvaluations() {
+		return evaluations;
 	}
 }
