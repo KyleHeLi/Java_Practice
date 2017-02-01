@@ -28,8 +28,8 @@ public class EmployeeTest {
 		
 		// print out information about all Employee objects
 		for (Employee e : staff) {
-			System.out.printf("name=%s, salary=%.2f, hireDay=%s \r\n", e.getName(), 
-					e.getSalary(), e.getHireDay());
+			System.out.printf("id=%d, name=%s, salary=%.2f, hireDay=%s \r\n",
+					e.getID(), e.getName(), e.getSalary(), e.getHireDay());
 			if  (e.getName().equals("Carl Cracker")) {
 				e.giveGoldStar();
 				e.giveSilverStar();
@@ -50,6 +50,9 @@ class Employee {
 	// Java 1.8
 	private LocalDate hireDay;
 	private final StringBuilder evaluations;
+	// nextId is shared with other Employee instances
+	private static int nextId = 1;
+	private int id;
 	
 	// constructor
 	public Employee(String n, double s, int year, int month, int day) {
@@ -57,6 +60,7 @@ class Employee {
 		salary = s;
 		hireDay = LocalDate.of(year, month, day);
 		evaluations = new StringBuilder();
+		this.setId();
 	}
 	
 	// methods
@@ -89,7 +93,17 @@ class Employee {
 		evaluations.append(LocalDate.now() + ": Brown star!\r\n");
 	}
 
+	public int getID() {
+		return id;
+	}
+
 	public  StringBuilder getEvaluations() {
 		return evaluations;
+	}
+
+	// set ID for a new employee
+	public void setId() {
+		id = nextId;
+		nextId++;
 	}
 }
