@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÏÂÎç3:40:03
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸‹åˆ3:40:03
 * @filename Practice/com.hl/EmployeeTest.java
 * This program tests the Employee class.
 */

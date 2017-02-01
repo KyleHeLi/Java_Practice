@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÏÂÎç12:17:01
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸‹åˆ12:17:01
 * @filename Practice/com.hl/LotteryOdds.java
 * This program demonstrates a <code>for</code> loop
 */

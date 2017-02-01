@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÏÂÎç2:44:07
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸‹åˆ2:44:07
 * @filename Practice/com.hl/LotteryDrawing.java
 * This program demonstrates array mnipulation
 */

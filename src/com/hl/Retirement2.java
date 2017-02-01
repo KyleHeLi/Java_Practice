@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÉÏÎç11:49:45
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸Šåˆ11:49:45
 * @filename Practice/com.hl/Retirement2.java
 * This program create a new loop
 */

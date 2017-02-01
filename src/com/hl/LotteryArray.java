@@ -2,7 +2,7 @@ package com.hl;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÏÂÎç2:59:05
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸‹åˆ2:59:05
 * @filename Practice/com.hl/LotteryArray.java
 * This program demonstrates a triangular array.
 */

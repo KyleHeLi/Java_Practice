@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
 * @author Kyle Lee 
-* @version 1.0 - Created date: 2017Äê1ÔÂ31ÈÕ ÏÂÎç2:05:17
+* @version 1.0 - Created date: 2017å¹´1æœˆ31æ—¥ ä¸‹åˆ2:05:17
 * @filename Practice/com.hl/BigIntergerTest.java
 * This program uses big numbers to compute the odds of winning the grand prize 
 * in a lottery
