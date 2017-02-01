@@ -54,7 +54,16 @@ class Employee {
 	private static int nextId = 1;
 	private int id;
 	
-	// constructor
+	// constructor with NO augments, initialize the parameters in the class
+	public Employee() {
+		name = "";
+		salary = 0.0;
+		hireDay = LocalDate.now();
+		evaluations = new StringBuilder();
+		id = assignId();
+	}
+	
+	// constructor with augments
 	public Employee(String n, double s, int year, int month, int day) {
 		name = n;
 		salary = s;
@@ -105,5 +114,12 @@ class Employee {
 	public void setId() {
 		id = nextId;
 		nextId++;
+	}
+	
+	// set ID in the constructor
+	private static int assignId() {
+		int r = nextId;
+		nextId++;
+		return r;
 	}
 }
