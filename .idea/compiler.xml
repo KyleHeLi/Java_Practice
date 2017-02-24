@@ -18,8 +18,11 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+<<<<<<< HEAD
     <bytecodeTargetLevel target="1.8">
       <module name="Practice" target="" />
     </bytecodeTargetLevel>
+=======
+>>>>>>> fc2b546d64bff593b2a30d82865fbe835a2ac112
   </component>
 </project>

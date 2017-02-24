@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ClientPropertiesManager">
     <properties class="javax.swing.AbstractButton">
       <property name="hideActionText" class="java.lang.Boolean" />
@@ -38,12 +39,15 @@
       <property name="caretWidth" class="java.lang.Integer" />
     </properties>
   </component>
+=======
+>>>>>>> fc2b546d64bff593b2a30d82865fbe835a2ac112
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+<<<<<<< HEAD
         <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.3.9" />
       </MavenGeneralSettings>
     </option>
@@ -64,6 +68,12 @@
       </profile-state>
     </entry>
   </component>
+=======
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+>>>>>>> fc2b546d64bff593b2a30d82865fbe835a2ac112
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
