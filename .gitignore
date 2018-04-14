@@ -3,3 +3,10 @@
 Practice.iml
 out/
 bin/
+
+# Eclipse
+.metadata/
+RemoteSystemsTempFiles/
+
+# Mac
+.DS_Store
