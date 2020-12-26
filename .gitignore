@@ -1,1 +1,5 @@
-/bin/
+# IDEA
+.idea/
+Practice.iml
+out/
+bin/
