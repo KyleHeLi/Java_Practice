@@ -1,8 +1,8 @@
 package com.hl;
 
-import java.util.EmptyStackException;
+import com.leetcode.amazon.MinStack_155;
 
-import com.leetcode.MinStack;
+import java.util.EmptyStackException;
 
 /**
 * @author Kyle Lee 
@@ -15,18 +15,18 @@ public class PackageTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MinStack minStack = new MinStack();
+		MinStack_155 minStack = new MinStack_155();
 		minStack.push(-2);
 		minStack.push(0);
 		minStack.push(-3);
 		
-		System.out.println(minStack.getMin());
+		System.out.println(minStack.min());
 		try {
 			for (int i=0; i<1; i++) {
 				minStack.pop();
 			}
 			System.out.println(minStack.top());
-			System.out.println(minStack.getMin());
+			System.out.println(minStack.min());
 		} catch (EmptyStackException e) {
 			System.err.println("EmptyStackException: " + e.getMessage());
 		} finally {
