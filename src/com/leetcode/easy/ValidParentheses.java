@@ -2,7 +2,7 @@ package com.leetcode.easy;
 
 import java.util.Stack;
 
-public class ValidParentheses_20 {
+public class ValidParentheses {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
 
@@ -36,7 +36,7 @@ public class ValidParentheses_20 {
     }
 
     public static void main(String[] args) {
-        ValidParentheses_20 test = new ValidParentheses_20();
+        ValidParentheses test = new ValidParentheses();
 
         // Example 1
         String s = "()";

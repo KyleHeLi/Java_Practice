@@ -1,6 +1,6 @@
 package com.hl;
 
-import com.leetcode.amazon.MinStack_155;
+import com.leetcode.amazon.MinStack;
 
 import java.util.EmptyStackException;
 
@@ -15,7 +15,7 @@ public class PackageTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MinStack_155 minStack = new MinStack_155();
+		MinStack minStack = new MinStack();
 		minStack.push(-2);
 		minStack.push(0);
 		minStack.push(-3);

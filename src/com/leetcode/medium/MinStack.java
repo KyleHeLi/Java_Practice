@@ -1,16 +1,16 @@
-package com.leetcode.amazon;
+package com.leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MinStack_155 {
+public class MinStack {
 
     private List<Integer> stack;
     private List<Integer> minStack;
     private int min;
     private int minNumber;
 
-    public MinStack_155() {
+    public MinStack() {
         // do intialization if necessary
         stack = new ArrayList<Integer>();
         min = Integer.MAX_VALUE;
@@ -71,7 +71,7 @@ public class MinStack_155 {
 
     public static void main(String[] args) {
         System.out.println("== Example1 ==");
-        MinStack_155 test = new MinStack_155();
+        MinStack test = new MinStack();
         test.push(1);
         System.out.println(test.min());
         test.pop();
@@ -82,7 +82,7 @@ public class MinStack_155 {
         System.out.println(test.min());
 
         System.out.println("== Example2 ==");
-        test = new MinStack_155();
+        test = new MinStack();
         test.push(1);
         System.out.println(test.min());
         test.push(2);
@@ -91,7 +91,7 @@ public class MinStack_155 {
         System.out.println(test.min());
 
         System.out.println("== Example3 ==");
-        test = new MinStack_155();
+        test = new MinStack();
         test.push(-1);
         test.push(-2);
         System.out.println(test.min());

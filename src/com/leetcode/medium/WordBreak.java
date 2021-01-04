@@ -3,7 +3,7 @@ package com.leetcode.medium;
 import java.util.Arrays;
 import java.util.List;
 
-public class WordBreak_139 {
+public class WordBreak {
     public boolean wordBreak(String s, List<String> wordDict) {
         if (s == null || s.equals("") || wordDict == null || wordDict.isEmpty()) {
             return false;
@@ -23,7 +23,7 @@ public class WordBreak_139 {
     }
 
     public static void main(String[] args) {
-        WordBreak_139 test = new WordBreak_139();
+        WordBreak test = new WordBreak();
 
         // Example 1
         String s = "leetcode";

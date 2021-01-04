@@ -2,7 +2,7 @@ package com.leetcode.easy;
 
 import java.util.HashMap;
 
-public class TwoSum_1 {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         int length = nums.length;
 
@@ -21,7 +21,7 @@ public class TwoSum_1 {
     }
 
     public static void main(String[] args) {
-        TwoSum_1 test = new TwoSum_1();
+        TwoSum test = new TwoSum();
 
         // Example 1
         int[] nums = new int[]{2, 7, 11, 15};
