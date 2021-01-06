@@ -6,6 +6,7 @@ import com.leetcode.common.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
+// Tag: Binary Search Tree
 public class BinaryTreePaths {
     /**
      * Definition for a binary tree node.

@@ -2,6 +2,7 @@ package com.leetcode.hard;
 
 import com.leetcode.common.TreeNode;
 
+// Tag: Binary Search Tree
 public class BinaryTreeMaximumPathSum {
     int max;
 
