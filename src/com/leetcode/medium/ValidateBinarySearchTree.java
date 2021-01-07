@@ -9,61 +9,57 @@ import java.util.List;
 
 // Tag: Binary Search Tree
 public class ValidateBinarySearchTree {
+    // Better solution
+    public boolean isValidBST(TreeNode root) {
+        return isValidBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isValidBST(TreeNode root, int min, int max) {
+        if (root == null) {
+            return true;
+        }
+
+        if (root.val <= min || root.val >= max) {
+            return false;
+        }
+
+        return isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max);
+    }
+
+    // Worse solution
 //    public boolean isValidBST(TreeNode root) {
 //        if (root == null) {
 //            return true;
 //        }
 //
-//        boolean leftValid = isValidBST(root.left);
+//        List<Integer> sequence = new ArrayList<Integer>();
 //
-//        boolean midValid = true;
+//        inorderTraversal(root, sequence);
 //
-//        if (root.left != null) {
-//            midValid = midValid && (root.left.val < root.val);
+//        int pre = sequence.get(0);
+//
+//        for (int i = 1, length = sequence.size(); i < length; i++) {
+//            if (pre >= sequence.get(i)) {
+//                return false;
+//            } else {
+//                pre = sequence.get(i);
+//            }
 //        }
 //
-//        if (root.right != null) {
-//            midValid = midValid && (root.right.val > root.val);
-//        }
-//
-//        boolean rightValid = isValidBST(root.right);
-//
-//        return leftValid && midValid && rightValid;
+//        return true;
 //    }
-
-    public boolean isValidBST(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
-
-        List<Integer> sequence = new ArrayList<Integer>();
-
-        inorderTraversal(root, sequence);
-
-        int pre = sequence.get(0);
-
-        for (int i = 1, length = sequence.size(); i < length; i++) {
-            if (pre >= sequence.get(i)) {
-                return false;
-            } else {
-                pre = sequence.get(i);
-            }
-        }
-
-        return true;
-    }
-
-    private void inorderTraversal(TreeNode node, List<Integer> sequence) {
-        if (node == null) {
-            return;
-        }
-
-        inorderTraversal(node.left, sequence);
-
-        sequence.add(node.val);
-
-        inorderTraversal(node.right, sequence);
-    }
+//
+//    private void inorderTraversal(TreeNode node, List<Integer> sequence) {
+//        if (node == null) {
+//            return;
+//        }
+//
+//        inorderTraversal(node.left, sequence);
+//
+//        sequence.add(node.val);
+//
+//        inorderTraversal(node.right, sequence);
+//    }
 
     public static void main(String[] args) {
         ValidateBinarySearchTree test = new ValidateBinarySearchTree();
