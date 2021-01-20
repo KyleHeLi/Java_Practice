@@ -58,6 +58,24 @@ public class Utils {
 //        printArray(Arrays.asList(array));
     }
 
+    public static void printDoubleArray(List<Double> array) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+
+        if (array != null) {
+            for (int i = 0, length = array.size(); i < length; i++) {
+                sb.append(array.get(i).toString());
+                if (i + 1 < length) {
+                    sb.append(", ");
+                }
+            }
+        }
+
+        sb.append("]");
+        System.out.println(sb.toString());
+//        printArray(Arrays.asList(array));
+    }
+
     public static void printArray(List<Object> array) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
