@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TreeNode {
+public class TreeNode implements Cloneable {
     public int val;
     public TreeNode left;
     public TreeNode right;
@@ -23,6 +23,11 @@ public class TreeNode {
         this.val = val;
         this.left = left;
         this.right = right;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     public String toString() {
