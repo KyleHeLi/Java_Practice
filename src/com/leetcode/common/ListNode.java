@@ -1,5 +1,7 @@
 package com.leetcode.common;
 
+import com.leetcode.easy.DeleteNodeInALinkedList;
+
 public class ListNode {
     public int val;
     public ListNode next;
@@ -49,5 +51,20 @@ public class ListNode {
         }
 
         return result;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        ListNode current = this;
+        while (current != null) {
+            sb.append(current.val);
+            if (current.next != null) {
+                sb.append(",");
+            }
+            current = current.next;
+        }
+        sb.append("]");
+        return sb.toString();
     }
 }
