@@ -35,18 +35,18 @@ public class ListNode {
     public boolean equals(ListNode other) {
         boolean result = true;
 
-        ListNode ptr1 = this, ptr2 = other;
-        while (ptr1 != null && ptr2 != null) {
-            if (ptr1.val != ptr2.val) {
+        ListNode ptr1 = this, pl2 = other;
+        while (ptr1 != null && pl2 != null) {
+            if (ptr1.val != pl2.val) {
                 result = false;
                 break;
             }
 
             ptr1 = ptr1.next;
-            ptr2 = ptr2.next;
+            pl2 = pl2.next;
         }
 
-        if ((ptr1 == null && ptr2 != null) || (ptr1 != null && ptr2 == null)) {
+        if ((ptr1 == null && pl2 != null) || (ptr1 != null && pl2 == null)) {
             result = false;
         }
 
