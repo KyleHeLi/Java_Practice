@@ -16,7 +16,6 @@ public class TreeNode implements Cloneable {
     }
 
     public TreeNode(List<TreeNode> nodes) {
-
     }
 
     public TreeNode(int val, TreeNode left, TreeNode right) {
