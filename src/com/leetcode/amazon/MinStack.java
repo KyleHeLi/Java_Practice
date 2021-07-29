@@ -7,14 +7,11 @@ public class MinStack {
 
     private List<Integer> stack;
     private List<Integer> minStack;
-    private int min;
-    private int minNumber;
 
     public MinStack() {
         // do intialization if necessary
         stack = new ArrayList<Integer>();
-        min = Integer.MAX_VALUE;
-        minNumber = 0;
+        minStack = new ArrayList<Integer>();
     }
 
     /*
@@ -24,11 +21,12 @@ public class MinStack {
     public void push(int number) {
         // write your code here
         stack.add(number);
-        if (min > number) {
-            min = number;
-            minNumber = 1;
-        } else if (min == number) {
-            minNumber++;
+        if (minStack.size() > 0) {
+            if (minStack.get(minStack.size()-1) >= number) {
+                minStack.add(number);
+            }
+        } else {
+            minStack.add(number);
         }
     }
 
@@ -38,21 +36,8 @@ public class MinStack {
     public int pop() {
         // write your code here
         int elemToPop = stack.remove(stack.size() - 1);
-        if (elemToPop == min) {
-            minNumber--;
-            if (minNumber < 1) {
-                if (stack.size() >= 1) {
-                    int tmpMin = stack.get(0).intValue();
-                    for (Integer elem : stack) {
-                        if (elem.intValue() < tmpMin) {
-                            tmpMin = elem.intValue();
-                        }
-                    }
-                    min = tmpMin;
-                } else {
-                    min = Integer.MAX_VALUE;
-                }
-            }
+        if (elemToPop == minStack.get(minStack.size() - 1)) {
+            minStack.remove(minStack.size() - 1);
         }
         return elemToPop;
     }
@@ -62,7 +47,7 @@ public class MinStack {
      */
     public int min() {
         // write your code here
-        return min;
+        return minStack.get(minStack.size() - 1);
     }
 
     public static void main(String[] args) {
@@ -70,7 +55,7 @@ public class MinStack {
         MinStack test = new MinStack();
         test.push(1);
         System.out.println(test.min());
-        test.pop();
+        System.out.println(test.pop());
         test.push(2);
         test.push(3);
         System.out.println(test.min());
@@ -91,20 +76,20 @@ public class MinStack {
         test.push(-1);
         test.push(-2);
         System.out.println(test.min());
-        test.pop();
+        System.out.println(test.pop());
         test.push(-3);
         test.push(3);
         test.push(2);
-        test.pop();
-        test.pop();
-        test.pop();
-        test.pop();
+        System.out.println(test.pop());
+        System.out.println(test.pop());
+        System.out.println(test.pop());
+        System.out.println(test.pop());
         test.push(400);
         test.push(3);
         test.push(200);
         test.push(1);
         System.out.println(test.min());
-        test.pop();
+        System.out.println(test.pop());
         System.out.println(test.min());
     }
 }
